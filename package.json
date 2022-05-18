@@ -1,0 +1,17 @@
+{
+  "name": "spotify_challange",
+  "version": "1.0.0",
+  "description": "Inventory management Application for Shopify intern challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd shopifyfrontend && npm i && npm start",
+    "server": "cd ShopifyBackendChalange && npm i && node app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "pc@dal.ca",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.0"
+  }
+}
