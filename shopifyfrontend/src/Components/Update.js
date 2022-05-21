@@ -26,6 +26,7 @@ function Update(props) {
 
   return (
     <div className="container fluid">
+      <h3>Update Item</h3>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -48,16 +49,16 @@ function Update(props) {
             });
         }}
       >
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputEmail1">Item Name</label>
           <input
-            class="form-control"
+            className="form-control"
             aria-describedby="emailHelp"
             value={itemName}
             onChange={(e) => setItemName(e.target.value)}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Item Description</label>
           <input
             class="form-control"
@@ -65,40 +66,40 @@ function Update(props) {
             onChange={(e) => setItemDesc(e.target.value)}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Item Quantity</label>
           <input
-            class="form-control"
+            className="form-control"
             value={itemQuantity}
             onChange={(e) => setItemQuantity(e.target.value)}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Item Price</label>
           <input
-            class="form-control"
+            className="form-control"
             value={itemPrice}
             onChange={(e) => setItemPrice(e.target.value)}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Purchase Date(yyyy-dd-mm)</label>
           <input
-            class="form-control"
+            className="form-control"
             value={itemPurchase}
             onChange={(e) => setitemPurchase(e.target.value)}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Expiry Date(yyyy-dd-mm)</label>
           <input
-            class="form-control"
+            className="form-control"
             value={itemExpiry}
             onChange={(e) => setitemExpiry(e.target.value)}
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Update
         </button>
       </form>

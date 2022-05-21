@@ -20,9 +20,12 @@ function Delete(props) {
       <form
         onSubmit={(event) => {
           event.preventDefault();
+
           axios
             .delete("/items/" + id, {
-              deletionComment: comment,
+              data: {
+                deletionComment: comment,
+              },
             })
             .then(function (response) {
               if (response.status !== 200) {
@@ -34,27 +37,27 @@ function Delete(props) {
             });
         }}
       >
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputEmail1">Item Name</label>
           <input
-            class="form-control"
+            className="form-control"
             aria-describedby="emailHelp"
             value={itemName}
             disabled={true}
           />
         </div>
 
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputEmail1">Deletion Comment </label>
           <input
-            class="form-control"
+            className="form-control"
             aria-describedby="deletion comment"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Delete
         </button>
       </form>
