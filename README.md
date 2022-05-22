@@ -17,7 +17,7 @@ Build an inventory tracking web application for a logistics company.[Documentati
 
 ## Demo
 
-- Replit (https://replit.com/@prerak131/ShopifyBackendChallenge)
+- Replit (https://replit.com/@prerak131/ShopifyBackendChallenge?v=1)
 
 ## Deployment
 
@@ -26,7 +26,9 @@ To deploy this project:
 - Clone it from the [github](https://github.com/prerak13/ShopifyBackendChallenge)
 - run "npm i"
 - run "npm run dev" (This shall run nodeJS on 5001 port and reactJS on 3000 port.)
+
 ## Foldure Structure
+
 - ShopifyBackendChalange: Contains backend code (NodeJS)
 - shopifyfrontend: Contains frontend code (ReactJS)
 
